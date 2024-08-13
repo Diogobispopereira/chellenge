@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --cor-primaria: #0A3871;
+    --cor-secundaria:#495057;
+    --cor-terciaria: #FFFFFF;
+    --texto-font: "Playfair Display", serif;
+    --font-texto: " 16px"
+}
+body{
+
+    background-color:#F3F5FC;
+}
+@keyframes swing {
+    0% { transform: rotate(-15deg); }  /* Gira a logo 15 graus para a esquerda */
+    50% { transform: rotate(15deg); }  /* Gira a logo 15 graus para a direita */
+    100% { transform: rotate(-15deg); } /* Retorna à posição original */
+  }
+.conteudo__img{
+    padding: 3%;
+    width: 150px; /* Largura da logo */
+    height: auto; /* Mantém a proporção */
+    animation: swing 2s infinite ease-in-out; 
+}
+
+.conteudo__secundario{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    
+}
+.caixa__container{
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    margin-left: 12%;
+}
+.conteudo__input::placeholder{
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 12px;
+    color: var(--cor-primaria);
+}
+.conteudo__input{
+    height: 70%;
+     width: 65%; 
+    border: none;
+    background: transparent; 
+    padding: 28px 77px;
+    font-size: 34px;
+    outline: none;
+    resize: none;
+}
+
+.conteudo__texto{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--cor-secundaria);
+    margin-left: 2%;
+}
+
+
+.conteudo__caixa-secundaria{
+    width: 400px;
+    text-align: center;
+    height: 744px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-terciaria);
+}
+.conteudo__input-secundario{
+    border: none;
+    width: 336px;
+    height: 65%;
+    margin: 30px 22px;
+    font-size: 24px;
+    outline:none;
+    resize: none;
+}
+.conteudo__input-secundario::placeholder{
+    text-align: center;
+    margin: 24px;
+    color: var(--cor-secundaria); 
+    
+}
+@media screen and (max-width: 1200px) {
+    .conteudo__secundario{
+       display: flex;
+       flex-direction: column;
+    }
+    .conteudo__caixa-secundaria{
+        height: 343px;
+        width: 100%;
+        gap:8px;
+        margin-top: 12px;
+    }
+    .caixa__container{
+        margin-left: 0;
+    }
+    .conteudo__input{
+        width: 98%;
+        height: 624px;
+    }
+    .conteudo__input-secundario{
+        width: 89%;
+        height: 180px;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .conteudo__input{
+        width: 60vw;
+        height: 624px;
+    }
+    .conteudo__input-secundario {
+        width: 89%;
+        height: 432px;
+        margin: 14px 3px;
+    }
+    .conteudo__texto{
+        margin-top: 17px;
+    }
+    .conteudo__caixa-secundaria {
+        margin-top:20px;
+        height: 595px;
+    }
+    .caixa__container{
+        width: 100%;
+    }
+}

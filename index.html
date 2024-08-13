@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/Criptografar/stiles.css" />
+  <link rel="stylesheet" href="./styles/Criptografar/botao.css" />
+  <link rel="stylesheet" href="./styles/Criptografar/rodape.css" />
+ <link rel = " @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap')" />
+ <link rel="@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap')"/>
+
+  <title>Decodificador</title>
+</head>
+
+<body>
+  <header class="conteudo__img">
+   <a href="https://www.alura.com.br/"><img src="./imagens/Logo.png" /></a> 
+  </header>
+
+  <main class="conteudo__principal">
+    <section class="conteudo__caixa">
+      <textarea type="text" placeholder="Digite seu texto" id="inputTexto" class="conteudo__input"></textarea>
+      
+      <h1 class="conteudo__texto"><img src="./imagens/Group.png" class="conteudo__caixa-img"> Apenas letras minúsculas e
+        sem acento.</h1>
+
+      <div class="conteudo__caixa-butao">
+        <a>
+          <button class="conteudo__butao-primario" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+        </a>
+
+        <a href="descriptografar.html">
+          <button class="conteudo__butao-secundario">
+            Descriptografar
+          </button>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="conteudo__caixa-secundaria">
+      <img src="./imagens/imagem quadro.png">
+     <div class="texto__secundario">
+      <h2>Nenhuma mensagem <br/>encontrada</h2>
+      <p class="conteudo__texto-secundario">
+        Digite um texto que você deseja criptografar</br> ou descriptografar.
+      </p>
+     </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer__texto">
+      &copy; Desenvolvido por: ¯\_(ツ)_/¯ 𝕯𝖎𝖔𝖌𝖔 ¯\_(ツ)_/¯.
+    </p >
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
